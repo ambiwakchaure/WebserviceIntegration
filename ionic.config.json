@@ -1,5 +1,7 @@
 {
   "name": "WebserviceIntegration",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

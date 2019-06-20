@@ -1,14 +1,19 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+      Webservice Integration
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+  <ion-button color="primary" expand="block" (click)='fetchDataFromServer()'>Fetch Data From Server</ion-button>
+
+  <div class = "box" *ngFor = "let item of id; let i = index">
+
+    <div>
+      <p><span>ID : </span><span innerHTML={{id[i]}}></span></p>
+      <p><span>NAME : </span><span innerHTML={{name[i]}}></span></p>
+    </div>
   </div>
 </ion-content>
